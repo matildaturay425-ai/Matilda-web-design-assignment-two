@@ -47,3 +47,31 @@ Lecturer: Mr. Amadu Kamara
 ​Save all 6 HTML files (index.html, about.html, menu.html, booking.html, gallery.html, and contact.html) together in a single folder.
 ​Double-click index.html to open the website in any web browser (Chrome, Edge, Firefox, or Safari).
 ​Ensure your computer/mobile device has an active internet connection to load the live image sources.
+
+
+
+
+#screenshort
+<img width="1763" height="1533" alt="Home" src="https://github.com/user-attachments/assets/1f8f4646-7512-427c-8cb7-5aee9c8c3a27" />
+
+<img width="1763" height="1196" alt="Gallery" src="https://github.com/user-attachments/assets/9f8282bd-db0a-482f-9400-6b9ebcd831e5" />
+
+<img width="1763" height="1448" alt="Menu" src="https://github.com/user-attachments/assets/58ec08b7-7c36-49bb-a24b-3caf34cdc9a2" />
+
+<img width="1763" height="1361" alt="Contact" src="https://github.com/user-attachments/assets/6ed0993e-a6cb-402e-93e2-b19d020189b4" />
+
+<img width="1763" height="1367" alt="About" src="https://github.com/user-attachments/assets/ac7e1121-b0ad-48a2-ba3e-6dffaa87e066" />
+<img width="1763" height="1510" alt="Book" src="https://github.com/user-attachments/assets/eb66920c-e9dc-4b65-a4ae-629d42ea527b" />
+
+
+
+
+
+
+
+
+
+
+
+
+
