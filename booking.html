@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salone Taste Kitchen - Reserve & Order</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; color: #2c2c2c; }
+    body { background-color: #fcf8f2; display: flex; flex-direction: column; min-height: 100vh; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; background-color: #ffffff; min-height: 100vh; box-shadow: 0 0 15px rgba(217, 107, 39, 0.08); }
+    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 2px solid #f7ebd7; }
+    
+    .logo { font-weight: bold; font-size: 1.2rem; letter-spacing: 1px; color: #d96b27; }
+    h1, h2, h3 { color: #3d1c10; }
+
+    nav a { text-decoration: none; font-size: 0.85rem; padding: 8px 14px; border: 1px solid #e5d3c5; border-radius: 4px; margin-left: 6px; background-color: #fff; color: #555; transition: all 0.2s ease; }
+    nav a:hover, nav a.active { background-color: #d96b27; color: #fff; border-color: #d96b27; }
+    
+    .page-subtitle { font-size: 0.75rem; color: #d96b27; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; margin-top: 20px; }
+    h1 { font-size: 2rem; margin: 10px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 15px; }
+    .page-description { font-size: 0.95rem; color: #666; margin-bottom: 25px; }
+    hr.divider { border: 0; border-top: 1px solid #f7ebd7; margin: 30px 0; }
+    
+    .btn { display: inline-block; padding: 10px 18px; border: none; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: bold; background-color: #d96b27; color: #fff; cursor: pointer; }
+    .btn:hover { background-color: #b8541c; }
+    .btn-outline { background-color: #fff; color: #d96b27; border: 1px solid #d96b27; }
+    .btn-outline:hover { background-color: #d96b27; color: #fff; }
+
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: bold; margin-bottom: 5px; color: #444; }
+    .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #e5d3c5; border-radius: 4px; font-size: 0.85rem; }
+    .form-group input:focus { border-color: #d96b27; outline: none; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .card { border: 1px solid #f7ebd7; padding: 20px; border-radius: 8px; background-color: #fbf6f0; }
+    
+    footer { margin-top: 50px; padding: 25px 20px; border-top: 2px solid #f7ebd7; background-color: #fbf6f0; }
+    footer .footer-logo { font-weight: bold; font-size: 1rem; color: #d96b27; margin-bottom: 5px; }
+    footer p { font-size: 0.75rem; color: #777; margin-bottom: 15px; }
+    footer .footer-nav { display: flex; gap: 10px; }
+    footer .footer-nav a { font-size: 0.75rem; padding: 4px 10px; border: 1px solid #e5d3c5; border-radius: 4px; text-decoration: none; background: #fff; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">SALONE TASTE KITCHEN</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="menu.html">Menu / Services</a>
+        <a href="booking.html" class="active">Book / Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-subtitle">SALONE TASTE KITCHEN | BOOK / ORDER</div>
+      <h1>Reserve a table or order online</h1>
+      <p class="page-description">Select option: choose, provide details, and review your request.</p>
+
+      <div style="display: flex; gap: 10px; margin-bottom: 25px;">
+        <a href="#reserve" class="btn btn-outline">Table reservation</a>
+        <a href="#takeaway" class="btn btn-outline">Takeaway order</a>
+      </div>
+
+      <hr class="divider">
+
+      <h2 id="reserve">01 / Reserve a table</h2>
+      <p class="page-description">Fill in your booking details.</p>
+      
+      <form style="margin-bottom: 30px;">
+        <div class="grid-2">
+          <div class="form-group">
+            <label>Full name</label>
+            <input type="text" placeholder="Enter full name">
+          </div>
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="tel" placeholder="Enter phone number">
+          </div>
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date">
+          </div>
+          <div class="form-group">
+            <label>Time</label>
+            <input type="time">
+          </div>
+          <div class="form-group">
+            <label>Number of guests</label>
+            <input type="number" placeholder="Enter number of guests">
+          </div>
+          <div class="form-group">
+            <label>Special requests</label>
+            <input type="text" placeholder="Enter special requests">
+          </div>
+        </div>
+        <button type="button" class="btn">Review reservation</button>
+      </form>
+
+      <hr class="divider">
+
+      <h2 id="takeaway">02 / Order takeaway</h2>
+      <p class="page-description">Choose your dish and confirm collection time.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-bottom: 15px;">Your order</h3>
+          <p style="margin-bottom: 8px;"><strong>Selected item:</strong> Jollof Rice</p>
+          <p style="margin-bottom: 8px;"><strong>Quantity:</strong> 1</p>
+          <p style="margin-bottom: 8px;"><strong>Subtotal:</strong> Le 70</p>
+          <p style="margin-bottom: 15px;"><strong>Collection:</strong> 1:30 PM</p>
+          
+          <div class="form-group">
+            <label>Discount code</label>
+            <input type="text" placeholder="Enter discount code">
+          </div>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label>Customer name</label>
+            <input type="text" placeholder="Enter customer name">
+          </div>
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="tel" placeholder="Enter phone number">
+          </div>
+          <div class="form-group">
+            <label>Collection time</label>
+            <input type="time">
+          </div>
+          <button type="button" class="btn">Review takeaway order</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-logo">SALONE TASTE KITCHEN</div>
+      <p>Freetown, Sierra Leone | University restaurant website concept</p>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu & services</a>
+        <a href="booking.html">Book / Order</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

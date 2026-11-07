@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salone Taste Kitchen - Menu & Services</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; color: #2c2c2c; }
+    body { background-color: #fcf8f2; display: flex; flex-direction: column; min-height: 100vh; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; background-color: #ffffff; min-height: 100vh; box-shadow: 0 0 15px rgba(217, 107, 39, 0.08); }
+    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 2px solid #f7ebd7; }
+    
+    .logo { font-weight: bold; font-size: 1.2rem; letter-spacing: 1px; color: #d96b27; }
+    h1, h2, h3 { color: #3d1c10; }
+
+    nav a { text-decoration: none; font-size: 0.85rem; padding: 8px 14px; border: 1px solid #e5d3c5; border-radius: 4px; margin-left: 6px; background-color: #fff; color: #555; transition: all 0.2s ease; }
+    nav a:hover, nav a.active { background-color: #d96b27; color: #fff; border-color: #d96b27; }
+    
+    .page-subtitle { font-size: 0.75rem; color: #d96b27; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; margin-top: 20px; }
+    h1 { font-size: 2rem; margin: 10px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 15px; }
+    .page-description { font-size: 0.95rem; color: #666; margin-bottom: 25px; }
+    hr.divider { border: 0; border-top: 1px solid #f7ebd7; margin: 30px 0; }
+    
+    .img-real { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
+    
+    .btn { display: inline-block; padding: 8px 14px; border: none; border-radius: 4px; text-decoration: none; font-size: 0.8rem; font-weight: bold; background-color: #d96b27; color: #fff; cursor: pointer; }
+    .btn:hover { background-color: #b8541c; }
+    .filter-btn { background-color: #fff; color: #d96b27; border: 1px solid #d96b27; }
+    .filter-btn:hover { background-color: #d96b27; color: #fff; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { border: 1px solid #f7ebd7; padding: 15px; border-radius: 8px; background-color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+    .card h3 { font-size: 1rem; margin-bottom: 5px; }
+    .card p { font-size: 0.8rem; color: #666; margin-bottom: 10px; }
+    
+    footer { margin-top: 50px; padding: 25px 20px; border-top: 2px solid #f7ebd7; background-color: #fbf6f0; }
+    footer .footer-logo { font-weight: bold; font-size: 1rem; color: #d96b27; margin-bottom: 5px; }
+    footer p { font-size: 0.75rem; color: #777; margin-bottom: 15px; }
+    footer .footer-nav { display: flex; gap: 10px; }
+    footer .footer-nav a { font-size: 0.75rem; padding: 4px 10px; border: 1px solid #e5d3c5; border-radius: 4px; text-decoration: none; background: #fff; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">SALONE TASTE KITCHEN</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="menu.html" class="active">Menu / Services</a>
+        <a href="booking.html">Book / Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-subtitle">SALONE TASTE KITCHEN | MENU & SERVICES</div>
+      <h1>Explore our menu & services</h1>
+      <p class="page-description">Choose your meal, learn about our services, and place your order.</p>
+
+      <div style="display: flex; gap: 10px; margin-bottom: 25px;">
+        <a href="#starters" class="btn filter-btn">Starters</a>
+        <a href="#mains" class="btn filter-btn">Main dishes</a>
+        <a href="#drinks" class="btn filter-btn">Drinks</a>
+        <a href="#services" class="btn filter-btn">Services</a>
+      </div>
+
+      <hr class="divider">
+
+      <h2 id="starters">Starters</h2>
+      <div class="grid-2" style="margin-bottom: 25px;">
+        <div class="card" style="display: flex; gap: 15px; align-items: center;">
+          <div style="width: 80px; height: 80px; flex-shrink: 0;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80" alt="Plantain Bites">
+          </div>
+          <div>
+            <h3>Plantain bites</h3>
+            <p>Fried ripe plantains | Le 30</p>
+            <a href="booking.html" class="btn">Order item</a>
+          </div>
+        </div>
+        <div class="card" style="display: flex; gap: 15px; align-items: center;">
+          <div style="width: 80px; height: 80px; flex-shrink: 0;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=300&q=80" alt="Fresh Salad">
+          </div>
+          <div>
+            <h3>Fresh salad</h3>
+            <p>Garden greens & dressing | Le 35</p>
+            <a href="booking.html" class="btn">Order item</a>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="mains">Main dishes</h2>
+      <div class="grid-2" style="margin-bottom: 25px;">
+        <div class="card" style="display: flex; gap: 15px; align-items: center;">
+          <div style="width: 80px; height: 80px; flex-shrink: 0;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=300&q=80" alt="Jollof Chicken">
+          </div>
+          <div>
+            <h3>Jollof & chicken</h3>
+            <p>Seasoned rice with chicken | Le 70</p>
+            <a href="booking.html" class="btn">Order item</a>
+          </div>
+        </div>
+        <div class="card" style="display: flex; gap: 15px; align-items: center;">
+          <div style="width: 80px; height: 80px; flex-shrink: 0;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80" alt="Cassava Leaf">
+          </div>
+          <div>
+            <h3>Cassava leaf & rice</h3>
+            <p>Traditional stew with steamed rice | Le 65</p>
+            <a href="booking.html" class="btn">Order item</a>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="drinks">Drinks</h2>
+      <div class="grid-2" style="margin-bottom: 25px;">
+        <div class="card" style="display: flex; gap: 15px; align-items: center;">
+          <div style="width: 80px; height: 80px; flex-shrink: 0;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80" alt="Ginger Juice">
+          </div>
+          <div>
+            <h3>Fresh ginger juice</h3>
+            <p>Handcrafted spicy juice | Le 20</p>
+            <a href="booking.html" class="btn">Order drink</a>
+          </div>
+        </div>
+        <div class="card" style="display: flex; gap: 15px; align-items: center;">
+          <div style="width: 80px; height: 80px; flex-shrink: 0;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=300&q=80" alt="Fruit Juice">
+          </div>
+          <div>
+            <h3>Seasonal fruit juice</h3>
+            <p>Fresh local fruit juice | Le 25</p>
+            <a href="booking.html" class="btn">Order drink</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <h2 id="services">Our services</h2>
+      <p class="page-description">Dine-in, takeaway, catering, and events.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Dine-in</h3>
+          <p>Book a table for lunch or dinner.</p>
+          <a href="booking.html" class="btn">Reserve table</a>
+        </div>
+        <div class="card">
+          <h3>Takeaway</h3>
+          <p>Order in advance for quick collection.</p>
+          <a href="booking.html" class="btn">Order takeaway</a>
+        </div>
+        <div class="card">
+          <h3>Catering & events</h3>
+          <p>Host your group with customized menus.</p>
+          <a href="contact.html" class="btn">Enquire now</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-logo">SALONE TASTE KITCHEN</div>
+      <p>Freetown, Sierra Leone | University restaurant website concept</p>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu & services</a>
+        <a href="booking.html">Book / Order</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

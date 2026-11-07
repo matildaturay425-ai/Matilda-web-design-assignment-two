@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salone Taste Kitchen - Home</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; color: #2c2c2c; }
+    body { background-color: #fcf8f2; display: flex; flex-direction: column; min-height: 100vh; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; background-color: #ffffff; min-height: 100vh; box-shadow: 0 0 15px rgba(217, 107, 39, 0.08); }
+    header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 2px solid #f7ebd7; }
+    
+    /* Brand & Headings with Color */
+    .logo { font-weight: bold; font-size: 1.2rem; letter-spacing: 1px; color: #d96b27; }
+    h1, h2 { color: #3d1c10; } /* Heading color applied */
+
+    nav a { text-decoration: none; font-size: 0.85rem; padding: 8px 14px; border: 1px solid #e5d3c5; border-radius: 4px; margin-left: 6px; background-color: #fff; color: #555; transition: all 0.2s ease; }
+    nav a:hover, nav a.active { background-color: #d96b27; color: #fff; border-color: #d96b27; }
+    
+    .page-subtitle { font-size: 0.75rem; color: #d96b27; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; margin-top: 20px; }
+    h1 { font-size: 2rem; margin: 10px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 15px; }
+    .page-description { font-size: 0.95rem; color: #666; margin-bottom: 25px; }
+    hr.divider { border: 0; border-top: 1px solid #f7ebd7; margin: 30px 0; }
+    
+    .img-real { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
+    
+    /* Vibrant, non-flashy buttons */
+    .btn { display: inline-block; padding: 10px 18px; border: none; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: bold; background-color: #d96b27; color: #fff; cursor: pointer; }
+    .btn:hover { background-color: #b8541c; }
+    .btn-outline { background-color: #fff; color: #d96b27; border: 1px solid #d96b27; margin-left: 8px; }
+    .btn-outline:hover { background-color: #fdf5f0; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    
+    .card { border: 1px solid #f7ebd7; padding: 15px; border-radius: 8px; background-color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+    .card h3 { font-size: 1.1rem; margin: 12px 0 5px 0; color: #3d1c10; }
+    .card p { font-size: 0.85rem; color: #666; margin-bottom: 12px; }
+    .card .price { font-size: 0.95rem; font-weight: bold; color: #d96b27; margin-bottom: 12px; }
+    
+    footer { margin-top: 50px; padding: 25px 20px; border-top: 2px solid #f7ebd7; background-color: #fbf6f0; }
+    footer .footer-logo { font-weight: bold; font-size: 1rem; color: #d96b27; margin-bottom: 5px; }
+    footer p { font-size: 0.75rem; color: #777; margin-bottom: 15px; }
+    footer .footer-nav { display: flex; gap: 10px; }
+    footer .footer-nav a { font-size: 0.75rem; padding: 4px 10px; border: 1px solid #e5d3c5; border-radius: 4px; text-decoration: none; background: #fff; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">SALONE TASTE KITCHEN</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About us</a>
+        <a href="menu.html">Menu / Services</a>
+        <a href="booking.html">Book / Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-subtitle">SALONE TASTE KITCHEN | HOME</div>
+      <h1>Welcome to Salone Taste Kitchen</h1>
+      <p class="page-description">Authentic Sierra Leonean food, warm hospitality, and a place to gather.</p>
+      
+      <hr class="divider">
+
+      <div class="grid-2" style="align-items: center;">
+        <div>
+          <h2 style="font-size: 1.8rem;">Good food.<br>Shared moments.</h2>
+          <p style="font-size: 0.9rem; color: #555; margin: 15px 0; line-height: 1.5;">Discover local favourites, reserve a table or order online for fast takeaway.</p>
+          <div>
+            <a href="menu.html" class="btn">Explore menu</a>
+            <a href="booking.html" class="btn btn-outline">Book a table</a>
+          </div>
+        </div>
+        <div style="height: 220px;">
+          <img class="img-real" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior">
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <h2>Featured dishes</h2>
+      <p class="page-description">Popular dishes straight from our kitchen.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div style="height: 140px; margin-bottom: 10px;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=600&q=80" alt="Jollof Rice">
+          </div>
+          <h3>Jollof rice</h3>
+          <p>Spiced rice with chicken and vegetables.</p>
+          <div class="price">Le 70</div>
+          <a href="booking.html" class="btn" style="padding: 6px 12px; font-size: 0.8rem;">Order this dish</a>
+        </div>
+        
+        <div class="card">
+          <div style="height: 140px; margin-bottom: 10px;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Cassava Leaf Stew">
+          </div>
+          <h3>Cassava leaf</h3>
+          <p>Traditional cassava leaf stew served with rice.</p>
+          <div class="price">Le 65</div>
+          <a href="booking.html" class="btn" style="padding: 6px 12px; font-size: 0.8rem;">Order this dish</a>
+        </div>
+
+        <div class="card">
+          <div style="height: 140px; margin-bottom: 10px;">
+            <img class="img-real" src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80" alt="Grilled Fish">
+          </div>
+          <h3>Grilled fish</h3>
+          <p>Freshly prepared fish with plantain.</p>
+          <div class="price">Le 80</div>
+          <a href="booking.html" class="btn" style="padding: 6px 12px; font-size: 0.8rem;">Order this dish</a>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div style="background: #fbf6f0; padding: 25px; border-radius: 8px; border-left: 4px solid #d96b27;">
+        <h2>Dine in. Take away. Celebrate.</h2>
+        <p class="page-description">Explore our dining, takeaway, and catering services.</p>
+        <div>
+          <a href="booking.html" class="btn">Book / Order</a>
+          <a href="about.html" class="btn btn-outline">About our kitchen</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-logo">SALONE TASTE KITCHEN</div>
+      <p>Freetown, Sierra Leone | University restaurant website concept</p>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu & services</a>
+        <a href="booking.html">Book / Order</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
